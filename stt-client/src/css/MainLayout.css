@@ -1,0 +1,17 @@
+/* MainLayout.css */
+.layout {
+  display: flex;
+  width: 100vw;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+  
+  padding: 0px;
+  width: calc(100% - 200px);
+  
+}
+

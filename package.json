@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-transcribe-streaming": "^3.515.0",
+    "buffer": "^6.0.3",
+    "microphone-stream": "^6.0.1"
+  }
+}

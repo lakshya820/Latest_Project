@@ -1,0 +1,510 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.large {
+  top: 117px;
+  left: 119px;
+  width: 176px;
+  height: 41px;
+  font-size: 41px;
+  font-weight: bold;
+}
+
+.medium {
+  top: 163px;
+  left: 121px;
+  width: 538px;
+  height: 27px;
+  font-size: 27px;
+}
+
+.small {
+  top: 227px;
+  left: 121px;
+  width: 459px;
+  height: 22px;
+  font-size: 22px;
+  font-style: italic;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.login-main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.login-left{
+  flex: 1;
+  height: 100vh;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.login-left-image{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.login-right{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.login-right-container{
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+
+}
+
+.login-logo{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.login-logo img {
+  width: 100px;
+}
+
+.login-right-container h2{
+  font-weight: 700;
+  margin-bottom: 30px;
+  font: normal normal bold 42px/14px Open Sans;
+  letter-spacing: 0px;
+  color: #303031;
+}
+
+.login-right-container p{
+  font-weight: 400;
+  margin-bottom: 30px;
+  font: normal normal normal 16px/13px Open Sans;
+  letter-spacing: 0px;
+  color: #4D4F5C;
+}
+
+form input[type='email'],
+form input[type='password'],
+form input[type='text']
+ {
+  width: 90%;
+  height: 41px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: 15px/25px;
+}
+
+
+.pass-input-div{
+  position: relative;
+}
+
+.pass-input-div svg{
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/*form button[type='button'] {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: 600;
+}*/
+
+
+.login-center-options{
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+.remember-div{
+  display: flex;
+  align-items: center;
+}
+
+.remember-div label{
+  margin-left: 5px;
+  cursor: pointer;
+  font: 1px/20px;
+}
+
+.forgot-pass-link{
+  font-size: 1.4rem;
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.forgot-pass-link:hover{
+  text-decoration: underline;
+}
+
+.login-center-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.login-button,
+.signup-button {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.signup-button {
+  background-color: #f2f2f2;
+  color: #6c63ff;
+}
+/*.login-center-buttons button:nth-child(1){
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+}
+
+.login-center-buttons button:nth-child(1):hover{
+  color: #333;
+  background-color: white;
+}
+
+.login-center-buttons button:nth-child(2){
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.login-center-buttons button:nth-child(2) img{
+  width: 30px;
+}
+
+.login-center-buttons button:nth-child(2):hover{
+  background-color: #c4c4c457;
+}
+*/
+.login-bottom-p{
+  text-align: center;
+  font-size: 1.4rem;
+  padding-top: 20px;
+}
+
+.login-bottom-p a{
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-bottom-p a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-main {
+    flex-direction: column;
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .login-left-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.dash-image{
+  width: 1150px;
+  height: 95vh;
+  
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.charts-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  
+  text-align: center;
+}
+
+th{
+  background-color: #413ea0;
+  color: white;
+}
+
+.inputText{
+  height: 500%;
+}
+
+/* Reset some default styles */
+.page-layout-custom,
+.page-layout-custom ul {
+  margin: 0;
+  padding: 0;
+}
+
+.page-layout-custom h2 {
+  text-align: left;
+  font: normal bold 22px/23px 'Open Sans', sans-serif;
+  letter-spacing: 1.21px;
+  color: #63666A;
+  font-size: 20px;
+}
+
+.page-layout-custom button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Header */
+.header-custom {
+  background-color: #D9D9D6;
+  height: 84px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.account-bar-custom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.account-title-custom {
+  margin-right: 10px;
+}
+
+.logo-custom img {
+  width: 35px;
+  height: 22px;
+  padding-top: 4px;
+}
+
+.buttons-container-custom {
+  display: flex;
+  align-items: center;
+}
+
+.notification-button-custom,
+.message-button-custom,
+.account-dropdown-custom {
+  margin-left: 10px;
+}
+
+.notification-button-custom button,
+.message-button-custom button,
+.account-button-custom button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.notification-button-custom img,
+.message-button-custom img,
+.account-button-custom img {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.account-name-custom {
+  margin-left: 10px;
+  font: normal normal normal 15px/23px 'Open Sans', sans-serif;
+  color: #4D4F5C;
+}
+
+.account-dropdown-custom {
+  position: relative;
+}
+
+.account-dropdown-custom .dropdown-arrow-custom {
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+.dropdown-content-custom {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+}
+
+.dropdown-content-custom a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-custom a:hover {
+  background-color: #f1f1f1;
+}
+
+.account-dropdown-custom:hover .dropdown-content-custom {
+  display: block;
+}
+
+/* Sidebar */
+.sidebar-custom {
+  background-color: #5F249F;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar-custom ul {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.sidebar-custom ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.sidebar-logo-custom {
+  width: 20px;
+  height: 17px;
+  margin-right: 10px;
+  border: 0.1px solid #5F249F;
+}
+
+.sidebar-custom ul li a {
+  color: #A5A4BF;
+  font: normal normal normal 16px/22px 'Open Sans', sans-serif;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+
+.sidebar-custom ul li:hover {
+  background-color: #421a6b;
+}
+
+.sidebar-custom a:hover {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.sidebar-content-custom {
+  width: 100%;
+}
+
+/* Content */
+.content-custom {
+  margin-left: 20%;
+  padding: 20px;
+}
+
+.table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FBFBFB;
+}
+
+.table-header-custom {
+  font-size: 33px;
+  color: #43425D;
+}
+
+.table-custom td:nth-child(2) {
+  text-decoration: underline;
+  width: 40%;
+}
+
+.table-custom th,
+.table-custom td {
+  padding: 8px;
+  text-align: left;
+  font: normal normal normal 14px/27px 'Open Sans', sans-serif;
+  color: #43425D;
+}
+
+.table-custom th {
+  background-color: #DFC8F8;
+  font-weight: bold;
+  color: #63666A;
+}
